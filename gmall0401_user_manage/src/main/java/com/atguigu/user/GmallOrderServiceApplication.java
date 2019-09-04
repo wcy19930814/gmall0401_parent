@@ -5,9 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("aa")
+@MapperScan("aaa")
 public class GmallOrderServiceApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(GmallOrderServiceApplication.class,args);
+    public static void main(String[] arg) {
+        SpringApplication.run(GmallOrderServiceApplication.class,arg);
     }
 }
