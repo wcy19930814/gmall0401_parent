@@ -24,7 +24,21 @@ public interface ManageService{
     //根据平台属性id查询到平台属性信息,并查询到对应的平台属性值
     BaseAttrInfo getBaseAttrInfo(String attrId);
 
-    //修改平台属性
+    //获取基本销售属性
+    List<BaseSaleAttr> getBaseSaleAttrList();
 
+    //保存spu信息
+    void saveSpuInfo(SpuInfo spuInfo);
 
+    //查询所有spuInfo信息
+    List<SpuInfo> getSpuList(String catalog3Id);
+
+    //在sku上获取所有spu图片
+    List<SpuImage> getSpuImageList(String spuId);
+
+    //根据spuId查询销售属性
+    List<SpuSaleAttr> getSpuSaleAttrList(String spuId);
+
+    //保存skuInfo
+    public void saveSkuInfo(SkuInfo skuInfo);
 }
